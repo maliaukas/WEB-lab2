@@ -1,7 +1,7 @@
 package model.builder;
 
-import model.сoffee.Coffee;
-import model.сoffee.GroundCoffee;
+import model.coffee.Coffee;
+import model.coffee.GroundCoffee;
 import model.CoffeeException;
 import model.coffee_enums.GroundCoffeeGrinding;
 

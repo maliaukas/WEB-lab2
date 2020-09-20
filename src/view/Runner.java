@@ -2,7 +2,7 @@ package view;
 
 import controller.OrderController;
 import controller.OrderException;
-import model.сoffee.CoffeeBeans;
+import model.coffee.CoffeeBeans;
 import model.builder.CoffeeBeansBuilder;
 import model.CoffeeException;
 import model.CoffeeShop;

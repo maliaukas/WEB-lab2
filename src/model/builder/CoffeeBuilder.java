@@ -1,6 +1,6 @@
 package model.builder;
 
-import model.сoffee.Coffee;
+import model.coffee.Coffee;
 import model.CoffeeException;
 import model.coffee_enums.Roasting;
 

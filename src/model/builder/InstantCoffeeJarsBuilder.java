@@ -1,7 +1,7 @@
 package model.builder;
 
-import model.сoffee.Coffee;
-import model.сoffee.InstantCoffeeJars;
+import model.coffee.Coffee;
+import model.coffee.InstantCoffeeJars;
 import model.CoffeeException;
 import model.coffee_enums.InstantCoffeeType;
 

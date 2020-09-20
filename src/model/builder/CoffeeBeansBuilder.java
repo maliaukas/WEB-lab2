@@ -1,7 +1,7 @@
 package model.builder;
 
-import model.сoffee.Coffee;
-import model.сoffee.CoffeeBeans;
+import model.coffee.Coffee;
+import model.coffee.CoffeeBeans;
 import model.CoffeeException;
 import model.coffee_enums.CoffeeBeansProcessing;
 

@@ -1,6 +1,6 @@
 package model;
 
-import model.сoffee.Coffee;
+import model.coffee.Coffee;
 
 import java.math.BigDecimal;
 import java.util.Vector;

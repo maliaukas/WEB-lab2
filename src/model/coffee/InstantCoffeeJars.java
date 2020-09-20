@@ -1,4 +1,4 @@
-package model.сoffee;
+package model.coffee;
 
 import model.coffee_enums.InstantCoffeeType;
 import model.coffee_enums.Roasting;

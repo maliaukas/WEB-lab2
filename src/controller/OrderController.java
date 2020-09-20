@@ -1,6 +1,6 @@
 package controller;
 
-import model.сoffee.Coffee;
+import model.coffee.Coffee;
 import model.CoffeeShop;
 
 public class OrderController {
