@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="" />
+    <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeArabicaComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeCountryComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeDateComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeNameComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeePriceComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeWeightComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/comparators/ComparatorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/OrderException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/Coffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Runner.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +92,26 @@
       <workItem from="1600340529069" duration="2012000" />
       <workItem from="1600364623927" duration="89000" />
       <workItem from="1600585897375" duration="25693000" />
+      <workItem from="1600630772795" duration="232000" />
+      <workItem from="1601119412376" duration="5079000" />
+      <workItem from="1601222361321" duration="8333000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

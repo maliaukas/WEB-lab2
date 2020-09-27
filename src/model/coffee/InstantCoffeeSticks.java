@@ -29,16 +29,25 @@ public class InstantCoffeeSticks extends InstantCoffee {
     }
 
     @Override
+    public String toString() {
+        return "InstantCoffeeSticks{" +
+                "sticksNumber=" + sticksNumber +
+                ", name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", roasting=" + roasting +
+                ", weight=" + weight +
+                ", arabicaPercent=" + arabicaPercent +
+                ", productionDate=" + productionDate +
+                ", pricePerKilo=" + pricePerKilo +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), sticksNumber);
     }
 
     public int getSticksNumber() {
         return sticksNumber;
-    }
-
-    @Override
-    public void sell(double weight) {
-        this.weight -= weight;
     }
 }

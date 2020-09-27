@@ -25,11 +25,6 @@ public class GroundCoffee extends Coffee {
 
 
     @Override
-    public void sell(double weight) {
-        this.weight -= weight;
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -45,5 +40,19 @@ public class GroundCoffee extends Coffee {
 
     public GroundCoffeeGrinding getGrinding() {
         return grinding;
+    }
+
+    @Override
+    public String toString() {
+        return "GroundCoffee{" +
+                "grinding=" + grinding +
+                ", name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", roasting=" + roasting +
+                ", weight=" + weight +
+                ", arabicaPercent=" + arabicaPercent +
+                ", productionDate=" + productionDate +
+                ", pricePerKilo=" + pricePerKilo +
+                '}';
     }
 }

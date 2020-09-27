@@ -23,11 +23,6 @@ public class InstantCoffeeJars extends InstantCoffee {
         this.jarVolume = jarVolume;
     }
 
-    @Override
-    public void sell(double weight) {
-        this.weight -= weight;
-    }
-
     public double getJarVolume() {
         return jarVolume;
     }
@@ -46,4 +41,17 @@ public class InstantCoffeeJars extends InstantCoffee {
         return Objects.hash(super.hashCode(), jarVolume);
     }
 
+    @Override
+    public String toString() {
+        return "InstantCoffeeJars{" +
+                "jarVolume=" + jarVolume +
+                ", name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", roasting=" + roasting +
+                ", weight=" + weight +
+                ", arabicaPercent=" + arabicaPercent +
+                ", productionDate=" + productionDate +
+                ", pricePerKilo=" + pricePerKilo +
+                '}';
+    }
 }

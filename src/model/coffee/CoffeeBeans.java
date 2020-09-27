@@ -23,12 +23,6 @@ public class CoffeeBeans extends Coffee {
     }
 
     @Override
-    public void sell(double weight) {
-        this.weight -= weight;
-    }
-
-
-    @Override
     public String toString() {
         return "CoffeeBeans{" +
                 "processing=" + processing +

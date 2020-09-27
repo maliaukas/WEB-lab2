@@ -12,10 +12,10 @@ import java.util.Objects;
 
 public abstract class Coffee {
     protected String name;
+    protected String country;
     protected Roasting roasting;
     protected double weight;
     protected int arabicaPercent;
-    protected String country;
     protected Date productionDate;
     protected BigDecimal pricePerKilo;
 
@@ -33,7 +33,9 @@ public abstract class Coffee {
         this.pricePerKilo = pricePerKilo;
     }
 
-    public abstract void sell(double weight);
+    public void sell(double weight) {
+        this.weight -= weight;
+    }
 
     public String getName() {
         return name;
