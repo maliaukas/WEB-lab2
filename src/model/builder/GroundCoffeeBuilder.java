@@ -5,6 +5,12 @@ import model.coffee.GroundCoffee;
 import model.CoffeeException;
 import model.coffee_enums.GroundCoffeeGrinding;
 
+/*
+ * Класс GroundCoffeeBuilder - строитель класса GroundCoffee
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class GroundCoffeeBuilder extends CoffeeBuilder {
     private GroundCoffeeGrinding grinding;
 

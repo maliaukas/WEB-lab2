@@ -7,6 +7,12 @@ import model.coffee_enums.Roasting;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/*
+ * Абстрактный класс CoffeeBuilder - строитель класса Coffee
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public abstract class CoffeeBuilder {
     protected Roasting roasting;
     protected double weight;

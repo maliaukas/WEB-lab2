@@ -7,6 +7,12 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 
+/**
+ * Абстрактный класс Растворимый Кофе
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public abstract class InstantCoffee extends Coffee {
     private InstantCoffeeType type;
 

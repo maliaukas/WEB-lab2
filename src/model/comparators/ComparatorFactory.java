@@ -4,6 +4,13 @@ import model.coffee.Coffee;
 
 import java.util.Comparator;
 
+/**
+ * Фабрика компараторов кофе
+ *
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class ComparatorFactory {
 
     public enum CompareBy {

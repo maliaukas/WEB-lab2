@@ -8,7 +8,9 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * Молотый кофе
+ * Класс Молотый Кофе
+ * @author Александра Малявко
+ * @version 2020
  */
 
 public class GroundCoffee extends Coffee {

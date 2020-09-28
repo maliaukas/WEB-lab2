@@ -4,6 +4,13 @@ import model.coffee.Coffee;
 
 import java.util.ArrayList;
 
+/**
+ * Класс Хранилище кофе
+ *
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class CoffeeWarehouse {
     private ArrayList<Coffee> coffee;
 

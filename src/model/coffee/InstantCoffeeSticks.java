@@ -7,6 +7,14 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 
+/**
+ * Класс Растворимый кофе в пакетиках
+ *
+ * @author Александра Малявко
+ * @version 2020
+ */
+
+
 public class InstantCoffeeSticks extends InstantCoffee {
     private int sticksNumber;
 

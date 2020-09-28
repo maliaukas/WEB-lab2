@@ -8,8 +8,12 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * Растворимый кофе в банке
+ * Класс Растворимый кофе в банке
+ *
+ * @author Александра Малявко
+ * @version 2020
  */
+
 
 public class InstantCoffeeJars extends InstantCoffee {
     private double jarVolume;

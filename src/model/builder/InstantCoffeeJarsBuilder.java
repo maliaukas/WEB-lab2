@@ -5,6 +5,12 @@ import model.coffee.InstantCoffeeJars;
 import model.CoffeeException;
 import model.coffee_enums.InstantCoffeeType;
 
+/*
+ * Класс InstantCoffeeJarsBuilder - строитель класса InstantCoffeeJars
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class InstantCoffeeJarsBuilder extends CoffeeBuilder {
     private double jarVolume;
     private InstantCoffeeType type;

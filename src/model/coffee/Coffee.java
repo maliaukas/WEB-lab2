@@ -7,10 +7,13 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * Абстрактный класс кофе
+ * Абстрактный класс Кофе
+ * @author Александра Малявко
+ * @version 2020
  */
 
 public abstract class Coffee {
+
     protected String name;
     protected String country;
     protected Roasting roasting;
@@ -48,7 +51,6 @@ public abstract class Coffee {
     public BigDecimal getPricePerKilo() {
         return pricePerKilo;
     }
-
 
     @Override
     public boolean equals(Object o) {

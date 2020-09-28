@@ -18,6 +18,13 @@ import model.coffee_enums.Roasting;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * Класс, демонстрирующий работу с проектом
+ *
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class Runner {
     public static void main(String[] args) {
         CoffeeBeansBuilder beansBuilder = new CoffeeBeansBuilder

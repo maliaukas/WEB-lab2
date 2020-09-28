@@ -5,6 +5,12 @@ import model.coffee.InstantCoffeeSticks;
 import model.CoffeeException;
 import model.coffee_enums.InstantCoffeeType;
 
+/*
+ * Класс InstantCoffeeSticksBuilder - строитель класса InstantCoffeeSticks
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class InstantCoffeeSticksBuilder extends CoffeeBuilder {
     private int sticksNumber;
     private InstantCoffeeType type;

@@ -5,6 +5,13 @@ import model.coffee.Coffee;
 import java.math.BigDecimal;
 import java.util.Vector;
 
+/**
+ * Класс Кофейня
+ *
+ * @author Александра Малявко
+ * @version 2020
+ */
+
 public class CoffeeShop {
     private Vector<Coffee> coffeeStorage;
 

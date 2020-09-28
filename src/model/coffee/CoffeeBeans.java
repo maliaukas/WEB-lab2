@@ -8,7 +8,9 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * Зерновой кофе
+ * Класс Зерновой Кофе
+ * @author Александра Малявко
+ * @version 2020
  */
 
 public class CoffeeBeans extends Coffee {

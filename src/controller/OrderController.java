@@ -11,16 +11,28 @@ import java.util.Comparator;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class OrderController {
-    public static void orderCoffee(CoffeeShop shop, CoffeeWarehouse warehouse) {
+/*
+ * Класс OrderController - заказ кофе в кофейню
+ * @author Александра Малявко
+ * @version 2020
+ */
 
+public class OrderController {
+
+    /**
+     * Метод заказа кофе из хранилища в кофейню
+     * @param shop кофейня, в которую происходит заказ
+     * @param warehouse хранилище, из которого происходит заказ
+     */
+
+    public static void orderCoffee(CoffeeShop shop, CoffeeWarehouse warehouse) {
         Comparator<Coffee> comp = getComp();
         warehouse.getCoffeeList().sort(comp);
 
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            if(warehouse.getCoffeeList().size() == 0){
+            if (warehouse.getCoffeeList().size() == 0) {
                 System.out.println("No results!");
                 break;
             }
@@ -55,6 +67,11 @@ public class OrderController {
         }
     }
 
+    /**
+     * Метод, выводящий список доступного для заказа кофе
+     * @param coffees список для вывода
+     */
+
     private static void printMenu(ArrayList<Coffee> coffees) {
         System.out.println("List of available coffee:");
         for (Coffee c : coffees) {
@@ -63,11 +80,21 @@ public class OrderController {
         }
     }
 
+    /**
+     * Метод, запрашивающий у пользователя способ выбора кофе
+     * @return номер выбранного пункта меню
+     */
+
     private static int getCoffeeChoice() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How would you like to choose the coffee?\n1. By country\n2. By name\n3. By price");
         return scanner.nextInt();
     }
+
+    /**
+     * Метод, запрашивающий у пользователя способ сортировки кофе для вывода
+     * @return выбранный компаратор
+     */
 
     private static Comparator<Coffee> getComp() {
         System.out.println("How would you like to sort the coffee?");

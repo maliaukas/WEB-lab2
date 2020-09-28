@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeArabicaComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeCountryComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeDateComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeePriceComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeWeightComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/comparators/ComparatorFactory.java" afterDir="false" />
+    <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="Add comments and javadoc">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/OrderException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CoffeeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/Coffee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeArabicaComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeArabicaComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeCountryComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeCountryComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeDateComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeDateComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeNameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeNameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeePriceComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeePriceComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeWeightComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeWeightComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/comparators/ComparatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/ComparatorFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Runner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,8 +102,17 @@
       <workItem from="1600585897375" duration="25693000" />
       <workItem from="1600630772795" duration="232000" />
       <workItem from="1601119412376" duration="5079000" />
-      <workItem from="1601222361321" duration="8333000" />
+      <workItem from="1601222361321" duration="9820000" />
+      <workItem from="1601287264641" duration="4743000" />
     </task>
+    <task id="LOCAL-00001" summary="Add second part: comparators, business-logic">
+      <created>1601230946942</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601230946942</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add second part: comparators, business-logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add second part: comparators, business-logic" />
   </component>
 </project>
