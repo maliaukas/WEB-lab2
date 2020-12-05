@@ -12,7 +12,7 @@ import model.coffee_enums.GroundCoffeeGrinding;
  */
 
 public class GroundCoffeeBuilder extends CoffeeBuilder {
-    private GroundCoffeeGrinding grinding;
+    private final GroundCoffeeGrinding grinding;
 
     public GroundCoffeeBuilder(double weight, String country,
                                String name, GroundCoffeeGrinding grinding) {

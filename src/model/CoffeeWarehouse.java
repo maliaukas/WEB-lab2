@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 
 public class CoffeeWarehouse {
-    private ArrayList<Coffee> coffee;
+    private final ArrayList<Coffee> coffee;
 
     public CoffeeWarehouse() {
         coffee = new ArrayList<>();

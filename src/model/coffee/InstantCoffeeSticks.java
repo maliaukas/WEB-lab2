@@ -16,7 +16,7 @@ import java.util.Objects;
 
 
 public class InstantCoffeeSticks extends InstantCoffee {
-    private int sticksNumber;
+    private final int sticksNumber;
 
     public InstantCoffeeSticks(String name, Roasting roasting,
                                double weight, int arabicaPercent,

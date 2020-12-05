@@ -12,7 +12,7 @@ import model.coffee_enums.CoffeeBeansProcessing;
  */
 
 public class CoffeeBeansBuilder extends CoffeeBuilder {
-    private CoffeeBeansProcessing processing;
+    private final CoffeeBeansProcessing processing;
 
     public CoffeeBeansBuilder(double weight, String country,
                               String name, CoffeeBeansProcessing processing) {

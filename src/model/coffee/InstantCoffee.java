@@ -14,7 +14,7 @@ import java.util.Objects;
  */
 
 public abstract class InstantCoffee extends Coffee {
-    private InstantCoffeeType type;
+    private final InstantCoffeeType type;
 
     public InstantCoffee(String name, Roasting roasting,
                          double weight, int arabicaPercent,

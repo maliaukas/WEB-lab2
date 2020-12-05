@@ -12,8 +12,8 @@ import model.coffee_enums.InstantCoffeeType;
  */
 
 public class InstantCoffeeSticksBuilder extends CoffeeBuilder {
-    private int sticksNumber;
-    private InstantCoffeeType type;
+    private final int sticksNumber;
+    private final InstantCoffeeType type;
 
     public InstantCoffeeSticksBuilder(double weight, String country,
                                       String name, int sticksNumber,

@@ -14,7 +14,7 @@ import java.util.Objects;
  */
 
 public class CoffeeBeans extends Coffee {
-    private CoffeeBeansProcessing processing;
+    private final CoffeeBeansProcessing processing;
 
     public CoffeeBeans(String name, Roasting roasting,
                        double weight, int arabicaPercent,

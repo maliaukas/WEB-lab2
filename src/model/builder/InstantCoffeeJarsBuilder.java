@@ -12,8 +12,8 @@ import model.coffee_enums.InstantCoffeeType;
  */
 
 public class InstantCoffeeJarsBuilder extends CoffeeBuilder {
-    private double jarVolume;
-    private InstantCoffeeType type;
+    private final double jarVolume;
+    private final InstantCoffeeType type;
 
     public InstantCoffeeJarsBuilder(double weight, String country,
                                     String name, double jarVolume,

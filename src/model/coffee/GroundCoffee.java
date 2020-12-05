@@ -14,7 +14,7 @@ import java.util.Objects;
  */
 
 public class GroundCoffee extends Coffee {
-    private GroundCoffeeGrinding grinding;
+    private final GroundCoffeeGrinding grinding;
 
     public GroundCoffee(String name, Roasting roasting,
                         double weight, int arabicaPercent,

@@ -1,35 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="Add comments and javadoc">
+    <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoffeeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/Coffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeArabicaComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeArabicaComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeCountryComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeCountryComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeDateComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeDateComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeNameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeNameComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeePriceComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeePriceComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/CoffeeWeightComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/CoffeeWeightComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/comparators/ComparatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/comparators/ComparatorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Runner.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -47,6 +30,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hdURlwkwlcF7r0rIozdPafHdlM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -54,20 +41,25 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CoffeeApp">
+    <configuration name="CoffeeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.CoffeeApp" />
+      <module name="WEB-lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Runner" />
       <module name="WEB-lab2" />
@@ -83,10 +75,12 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CoffeeApp" />
         <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,7 +97,13 @@
       <workItem from="1600630772795" duration="232000" />
       <workItem from="1601119412376" duration="5079000" />
       <workItem from="1601222361321" duration="9820000" />
-      <workItem from="1601287264641" duration="4743000" />
+      <workItem from="1601287264641" duration="7738000" />
+      <workItem from="1601476982137" duration="779000" />
+      <workItem from="1601751398255" duration="1405000" />
+      <workItem from="1601839809868" duration="1451000" />
+      <workItem from="1602168797655" duration="32000" />
+      <workItem from="1607201204853" duration="351000" />
+      <workItem from="1607201861045" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="Add second part: comparators, business-logic">
       <created>1601230946942</created>
@@ -112,27 +112,46 @@
       <option name="project" value="LOCAL" />
       <updated>1601230946942</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add comments and javadoc">
+      <created>1601292581510</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601292581510</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add javadoc">
+      <created>1601292866601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601292866601</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add second part: comparators, business-logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add second part: comparators, business-logic" />
+    <MESSAGE value="Add comments and javadoc" />
+    <MESSAGE value="Add javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -13,7 +13,7 @@ import java.util.Vector;
  */
 
 public class CoffeeShop {
-    private Vector<Coffee> coffeeStorage;
+    private final Vector<Coffee> coffeeStorage;
 
     private BigDecimal budget;
 

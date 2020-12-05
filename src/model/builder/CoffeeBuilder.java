@@ -40,10 +40,10 @@ public abstract class CoffeeBuilder {
         if (arabicaPercent > 100 || arabicaPercent < 0) {
             throw new CoffeeException("Percent of Arabica must be from 0 to 100!");
         }
-        if (country.isBlank()) {
+        if (country.isEmpty()) {
             throw new CoffeeException("Country must have value!");
         }
-        if (name.isBlank()) {
+        if (name.isEmpty()) {
             throw new CoffeeException("Name must have value!");
         }
     }

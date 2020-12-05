@@ -87,7 +87,10 @@ public class OrderController {
 
     private static int getCoffeeChoice() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("How would you like to choose the coffee?\n1. By country\n2. By name\n3. By price");
+        System.out.println("How would you like to choose the coffee?" +
+                "\n1. By country" +
+                "\n2. By name" +
+                "\n3. By price");
         return scanner.nextInt();
     }
 

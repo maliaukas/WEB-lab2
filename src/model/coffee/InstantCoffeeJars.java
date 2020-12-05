@@ -16,7 +16,7 @@ import java.util.Objects;
 
 
 public class InstantCoffeeJars extends InstantCoffee {
-    private double jarVolume;
+    private final double jarVolume;
 
     public InstantCoffeeJars(String name, Roasting roasting,
                              double weight, int arabicaPercent,
