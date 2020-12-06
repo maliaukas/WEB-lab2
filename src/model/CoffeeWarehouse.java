@@ -2,16 +2,17 @@ package model;
 
 import model.coffee.Coffee;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Класс Хранилище кофе
+ * Класс Склад кофе
  *
  * @author Александра Малявко
  * @version 2020
  */
 
-public class CoffeeWarehouse {
+public class CoffeeWarehouse implements Serializable {
     private final ArrayList<Coffee> coffee;
 
     public CoffeeWarehouse() {
@@ -26,7 +27,18 @@ public class CoffeeWarehouse {
         coffee.add(c);
     }
 
+    public void removeCoffee(Coffee c) {
+        coffee.remove(c);
+    }
+
     public ArrayList<Coffee> getCoffeeList() {
         return coffee;
+    }
+
+    @Override
+    public String toString() {
+        return "CoffeeWarehouse{" +
+                "coffee=" + coffee +
+                '}';
     }
 }

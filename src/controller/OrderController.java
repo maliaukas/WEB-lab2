@@ -1,138 +1,154 @@
 package controller;
 
-import model.CoffeeShop;
+import model.CoffeeException;
+import model.CoffeeRequest;
 import model.CoffeeWarehouse;
+import model.ICoffeeShopRemote;
+import model.builder.CoffeeBeansBuilder;
+import model.builder.GroundCoffeeBuilder;
+import model.builder.InstantCoffeeJarsBuilder;
 import model.coffee.Coffee;
-import model.comparators.ComparatorFactory;
+import model.coffee.CoffeeBeans;
+import model.coffee.GroundCoffee;
+import model.coffee.InstantCoffeeJars;
+import model.coffee_enums.CoffeeBeansProcessing;
+import model.coffee_enums.GroundCoffeeGrinding;
+import model.coffee_enums.InstantCoffeeType;
+import model.coffee_enums.Roasting;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
-import java.math.BigDecimal;
+import java.rmi.RemoteException;
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.Date;
 
 /*
- * Класс OrderController - заказ кофе в кофейню
+ * Класс OrderController - управляет заказами кофе с определенного склада
+ *
  * @author Александра Малявко
  * @version 2020
  */
 
-public class OrderController {
+public class OrderController implements ICoffeeControllerRemote {
+    private static final Logger logger =
+            LogManager.getLogger(OrderController.class.getName());
 
     /**
-     * Метод заказа кофе из хранилища в кофейню
-     * @param shop кофейня, в которую происходит заказ
-     * @param warehouse хранилище, из которого происходит заказ
+     * Склад кофе, управление которым осуществляет данный контроллер
      */
+    private final CoffeeWarehouse warehouse;
 
-    public static void orderCoffee(CoffeeShop shop, CoffeeWarehouse warehouse) {
-        Comparator<Coffee> comp = getComp();
-        warehouse.getCoffeeList().sort(comp);
-
-        Scanner scanner = new Scanner(System.in);
-
-        while (true) {
-            if (warehouse.getCoffeeList().size() == 0) {
-                System.out.println("No results!");
-                break;
-            }
-            if (warehouse.getCoffeeList().size() == 1) {
-                System.out.println("You've chosen:");
-                Coffee chosenCoffee = warehouse.getCoffeeList().get(0);
-                System.out.println(chosenCoffee);
-                orderCoffee(shop, chosenCoffee);
-                break;
-            }
-            printMenu(warehouse.getCoffeeList());
-            switch (getCoffeeChoice()) {
-                case 1: {
-                    System.out.println("Enter the country:");
-                    String country = scanner.nextLine();
-                    warehouse = CoffeeFinder.findByCountry(warehouse, country);
-                    break;
-                }
-                case 2: {
-                    System.out.println("Enter the name:");
-                    String name = scanner.nextLine();
-                    warehouse = CoffeeFinder.findByName(warehouse, name);
-                    break;
-                }
-                case 3: {
-                    System.out.println("Enter the price:");
-                    String price = scanner.nextLine();
-                    warehouse = CoffeeFinder.findByPrice(warehouse, new BigDecimal(price));
-                    break;
-                }
-            }
-        }
+    /**
+     * Конструктор, заполняющий склад предопределенными значениями
+     */
+    public OrderController() {
+        this.warehouse = setUpWarehouse();
     }
 
     /**
-     * Метод, выводящий список доступного для заказа кофе
-     * @param coffees список для вывода
+     * Метод, выполняющий начальное заполнение склада
+     *
+     * @return склад
      */
+    private static CoffeeWarehouse setUpWarehouse() {
+        CoffeeBeansBuilder beansBuilder = new CoffeeBeansBuilder
+                (3, "Brazil", "Sasha",
+                        CoffeeBeansProcessing.WET_HULL);
+        beansBuilder.setArabicaPercent(100);
+        beansBuilder.setPricePerKilo(20);
+        beansBuilder.setProductionDate(new Date());
+        beansBuilder.setRoasting(Roasting.DARK);
 
-    private static void printMenu(ArrayList<Coffee> coffees) {
-        System.out.println("List of available coffee:");
-        for (Coffee c : coffees) {
-            System.out.println();
-            System.out.println(c.toString());
-        }
-    }
+        GroundCoffeeBuilder groundCoffeeBuilder = new GroundCoffeeBuilder
+                (4.5, "Russia", "Jacobs",
+                        GroundCoffeeGrinding.COURSE_GRIND);
+        groundCoffeeBuilder.setArabicaPercent(75);
+        groundCoffeeBuilder.setPricePerKilo(5);
+        groundCoffeeBuilder.setProductionDate(new Date());
+        groundCoffeeBuilder.setRoasting(Roasting.MEDIUM);
 
-    /**
-     * Метод, запрашивающий у пользователя способ выбора кофе
-     * @return номер выбранного пункта меню
-     */
+        InstantCoffeeJarsBuilder jarsBuilder = new InstantCoffeeJarsBuilder
+                (10, "Columbia", "Coffee in jars",
+                        250, InstantCoffeeType.GRANULATED);
 
-    private static int getCoffeeChoice() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How would you like to choose the coffee?" +
-                "\n1. By country" +
-                "\n2. By name" +
-                "\n3. By price");
-        return scanner.nextInt();
-    }
+        jarsBuilder.setArabicaPercent(90);
+        jarsBuilder.setPricePerKilo(10);
+        jarsBuilder.setProductionDate(new Date());
+        jarsBuilder.setRoasting(Roasting.LIGHT);
 
-    /**
-     * Метод, запрашивающий у пользователя способ сортировки кофе для вывода
-     * @return выбранный компаратор
-     */
+        CoffeeBeans coffeeBeans;
+        GroundCoffee groundCoffee;
+        InstantCoffeeJars jarsCoffee;
 
-    private static Comparator<Coffee> getComp() {
-        System.out.println("How would you like to sort the coffee?");
-
-        for (ComparatorFactory.CompareBy v : ComparatorFactory.CompareBy.values()) {
-            System.out.println("- " + v);
+        try {
+            coffeeBeans = (CoffeeBeans) beansBuilder.Build();
+            groundCoffee = (GroundCoffee) groundCoffeeBuilder.Build();
+            jarsCoffee = (InstantCoffeeJars) jarsBuilder.Build();
+        } catch (CoffeeException ex) {
+            logger.error("Error while building coffee!");
+            return null;
         }
 
-        Scanner s = new Scanner(System.in);
-        String res = s.next();
+        CoffeeWarehouse warehouse = new CoffeeWarehouse();
+        warehouse.addCoffee(coffeeBeans);
+        warehouse.addCoffee(jarsCoffee);
+        warehouse.addCoffee(groundCoffee);
 
-        return ComparatorFactory.getComparator
-                (ComparatorFactory.CompareBy.valueOf(res.toUpperCase()));
+        logger.debug("Warehouse successfully created!");
+        return warehouse;
     }
 
-    private static void orderCoffee(CoffeeShop shop, Coffee coffee) {
-        Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.ENGLISH);
-        while (true) {
-            System.out.println("Enter the weight of coffee to order: ");
-            double weight = scanner.nextDouble();
-            if (shop.getBudget().compareTo(coffee.getPrice(weight)) < 0) {
-                System.out.println("Coffeeshop doesn't have enough money!");
+    /**
+     * Геттер склада
+     *
+     * @return склад
+     */
+    @Override
+    public CoffeeWarehouse getWarehouse() {
+        return warehouse;
+    }
+
+    /**
+     * Метод, выполняющий заказ кофе в кофейню
+     *
+     * @param shop     кофейня, в которую выполняется заказ
+     * @param requests список заказов
+     * @throws RemoteException в случае ошибки работы с RMI
+     */
+    @Override
+    public synchronized void orderCoffee(ICoffeeShopRemote shop,
+                                         ArrayList<CoffeeRequest> requests)
+            throws RemoteException {
+        for (var request : requests) {
+            Coffee coffee = request.getCoffee();
+            double weight = request.getWeight();
+
+            // извлекаем требуемый кофе из хранилища
+            warehouse.removeCoffee(coffee);
+            Coffee soldCoffee;
+            try {
+                // пытаемся получить требуемое кол-во
+                soldCoffee = coffee.sell(weight);
+            } catch (CoffeeException e) {
+                // если не получилось
+                logger.error("Error while buying coffee " +
+                        coffee.toString() + ": "
+                        + e.getMessage());
+
+                // возвращаем кофе в хранилище
+                warehouse.addCoffee(coffee);
                 continue;
             }
-            if (coffee.getWeight() < weight) {
-                System.out.println("There's not enough coffee in stock!");
-                continue;
-            }
 
+            // если удалось получить требуемое кол-во, получаем оплату от кофейни
             shop.pay(coffee.getPrice(weight));
-            coffee.sell(weight);
-            shop.addCoffee(coffee);
-            System.out.println("Success!");
-            break;
+            // добавляем требуемый кофе в кофейню
+            shop.addCoffee(soldCoffee);
+
+            // возвращаем оставшийся кофе в хранилище
+            warehouse.addCoffee(coffee);
+            logger.info("Sold successfully: " + soldCoffee.toString());
         }
+        logger.info("Warehouse state: " + warehouse.toString());
     }
 }

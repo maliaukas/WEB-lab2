@@ -3,6 +3,7 @@ package model.coffee;
 import model.coffee_enums.InstantCoffeeType;
 import model.coffee_enums.Roasting;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
@@ -13,7 +14,7 @@ import java.util.Objects;
  * @version 2020
  */
 
-public abstract class InstantCoffee extends Coffee {
+public abstract class InstantCoffee extends Coffee  implements Serializable {
     private final InstantCoffeeType type;
 
     public InstantCoffee(String name, Roasting roasting,

@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ICoffeeControllerRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CoffeeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ICoffeeShopRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/OrderMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/RMIClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/RMIServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/Coffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Runner.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +37,7 @@
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,48 +50,60 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Application.CoffeeApp">
-    <configuration name="CoffeeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.CoffeeApp" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WEB\lab2\WEB-lab2\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RMIClient">
+    <configuration name="RMIClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.RMIClient" />
       <module name="WEB-lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.Runner" />
+    <configuration name="RMIServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.RMIServer" />
       <module name="WEB-lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RMIClient" />
+      <item itemvalue="Application.RMIServer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CoffeeApp" />
-        <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.RMIClient" />
+        <item itemvalue="Application.RMIServer" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +130,9 @@
       <workItem from="1601839809868" duration="1451000" />
       <workItem from="1602168797655" duration="32000" />
       <workItem from="1607201204853" duration="351000" />
-      <workItem from="1607201861045" duration="498000" />
+      <workItem from="1607201861045" duration="4132000" />
+      <workItem from="1607246787415" duration="10273000" />
+      <workItem from="1607276634491" duration="7862000" />
     </task>
     <task id="LOCAL-00001" summary="Add second part: comparators, business-logic">
       <created>1601230946942</created>
@@ -126,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601292866601</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Make some fields final">
+      <created>1607202572769</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607202572769</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +184,8 @@
     <MESSAGE value="Add second part: comparators, business-logic" />
     <MESSAGE value="Add comments and javadoc" />
     <MESSAGE value="Add javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add javadoc" />
+    <MESSAGE value="Make some fields final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make some fields final" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

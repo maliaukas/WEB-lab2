@@ -1,18 +1,21 @@
 package model.coffee;
 
+import model.CoffeeException;
 import model.coffee_enums.Roasting;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 
 /**
  * Абстрактный класс Кофе
+ *
  * @author Александра Малявко
  * @version 2020
  */
 
-public abstract class Coffee {
+public abstract class Coffee implements Serializable {
 
     protected String name;
     protected String country;
@@ -36,9 +39,7 @@ public abstract class Coffee {
         this.pricePerKilo = pricePerKilo;
     }
 
-    public void sell(double weight) {
-        this.weight -= weight;
-    }
+    public abstract Coffee sell(double weight) throws CoffeeException;
 
     public String getName() {
         return name;

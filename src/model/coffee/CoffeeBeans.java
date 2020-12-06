@@ -1,19 +1,22 @@
 package model.coffee;
 
+import model.CoffeeException;
 import model.coffee_enums.CoffeeBeansProcessing;
 import model.coffee_enums.Roasting;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 
 /**
  * Класс Зерновой Кофе
+ *
  * @author Александра Малявко
  * @version 2020
  */
 
-public class CoffeeBeans extends Coffee {
+public class CoffeeBeans extends Coffee implements Serializable {
     private final CoffeeBeansProcessing processing;
 
     public CoffeeBeans(String name, Roasting roasting,
@@ -27,15 +30,31 @@ public class CoffeeBeans extends Coffee {
     @Override
     public String toString() {
         return "CoffeeBeans{" +
-                "processing=" + processing +
-                ", name='" + name + '\'' +
-                ", roasting=" + roasting +
-                ", weight=" + weight +
-                ", arabicaPercent=" + arabicaPercent +
-                ", country='" + country + '\'' +
-                ", productionDate=" + productionDate +
-                ", pricePerKilo=" + pricePerKilo +
-                '}';
+                "\n processing=" + processing +
+                ",\n name='" + name + '\'' +
+                ",\n roasting=" + roasting +
+                ",\n weight=" + weight +
+                ",\n arabicaPercent=" + arabicaPercent +
+                ",\n country='" + country + '\'' +
+                ",\n productionDate=" + productionDate +
+                ",\n pricePerKilo=" + pricePerKilo +
+                "}\n";
+    }
+
+    @Override
+    public Coffee sell(double weight) throws CoffeeException {
+        if (weight > this.weight)
+            throw new CoffeeException("Not enough coffee to sell!");
+        this.weight -= weight;
+
+        return new CoffeeBeans(name,
+                roasting,
+                weight,
+                arabicaPercent,
+                country,
+                productionDate,
+                pricePerKilo,
+                processing);
     }
 
     @Override

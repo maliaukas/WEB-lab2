@@ -3,17 +3,17 @@ package model;
 import model.coffee.Coffee;
 
 import java.math.BigDecimal;
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
- * Класс Кофейня
+ * Класс Кофейня. Определяется списком кофе в наличии и бюджетом
  *
  * @author Александра Малявко
  * @version 2020
  */
 
-public class CoffeeShop {
-    private final Vector<Coffee> coffeeStorage;
+public class CoffeeShop implements ICoffeeShopRemote {
+    private final ArrayList<Coffee> coffeeStorage;
 
     private BigDecimal budget;
 
@@ -23,7 +23,7 @@ public class CoffeeShop {
         }
 
         this.budget = budget;
-        coffeeStorage = new Vector<>();
+        coffeeStorage = new ArrayList<>();
     }
 
     @Override
@@ -42,7 +42,7 @@ public class CoffeeShop {
         budget = budget.subtract(price);
     }
 
-    public void addCoffee(Coffee coffee){
+    public void addCoffee(Coffee coffee) {
         coffeeStorage.add(coffee);
     }
 }

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /*
- * Класс СoffeeFinder - поиск кофе в Хранилище
+ * Класс CoffeeFinder - поиск кофе в Хранилище
  * @author Александра Малявко
  * @version 2020
  */
@@ -17,8 +17,9 @@ public class CoffeeFinder {
 
     /**
      * Метод поиска кофе в хранилище по названию
+     *
      * @param warehouse хранилище, в котором осуществляется поиск
-     * @param name название кофе
+     * @param name      название кофе
      * @return новое хранилище с указанными параметрами
      */
 
@@ -34,8 +35,9 @@ public class CoffeeFinder {
 
     /**
      * Метод поиска кофе в хранилище по стране-производителю
+     *
      * @param warehouse хранилище, в котором осуществляется поиск
-     * @param country название страны-производителя
+     * @param country   название страны-производителя
      * @return новое хранилище с указанными параметрами
      */
 
@@ -51,8 +53,9 @@ public class CoffeeFinder {
 
     /**
      * Метод поиска кофе в хранилище по дате изготовления
+     *
      * @param warehouse хранилище, в котором осуществляется поиск
-     * @param date дата изготовления
+     * @param date      дата изготовления
      * @return новое хранилище с указанными параметрами
      */
     public static CoffeeWarehouse findByDate(CoffeeWarehouse warehouse, Date date) {
@@ -67,8 +70,9 @@ public class CoffeeFinder {
 
     /**
      * Метод поиска кофе в хранилище по проценту содержания арабики
+     *
      * @param warehouse хранилище, в котором осуществляется поиск
-     * @param arabica процент арабика
+     * @param arabica   процент арабика
      * @return новое хранилище с указанными параметрами
      */
 
@@ -84,8 +88,9 @@ public class CoffeeFinder {
 
     /**
      * Метод поиска кофе в хранилище по массе
+     *
      * @param warehouse хранилище, в котором осуществляется поиск
-     * @param weight масса
+     * @param weight    масса
      * @return новое хранилище с указанными параметрами
      */
 
@@ -101,8 +106,9 @@ public class CoffeeFinder {
 
     /**
      * Метод поиска кофе в хранилище по цене за килограмм
+     *
      * @param warehouse хранилище, в котором осуществляется поиск
-     * @param price цена
+     * @param price     цена
      * @return новое хранилище с указанными параметрами
      */
 

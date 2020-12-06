@@ -1,8 +1,10 @@
 package model.coffee;
 
+import model.CoffeeException;
 import model.coffee_enums.InstantCoffeeType;
 import model.coffee_enums.Roasting;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
@@ -15,7 +17,7 @@ import java.util.Objects;
  */
 
 
-public class InstantCoffeeJars extends InstantCoffee {
+public class InstantCoffeeJars extends InstantCoffee implements Serializable {
     private final double jarVolume;
 
     public InstantCoffeeJars(String name, Roasting roasting,
@@ -29,6 +31,22 @@ public class InstantCoffeeJars extends InstantCoffee {
 
     public double getJarVolume() {
         return jarVolume;
+    }
+
+    @Override
+    public Coffee sell(double weight) throws CoffeeException {
+        if (weight > this.weight)
+            throw new CoffeeException("Not enough coffee to sell!");
+        this.weight -= weight;
+        return new InstantCoffeeJars(name,
+                roasting,
+                weight,
+                arabicaPercent,
+                country,
+                productionDate,
+                pricePerKilo,
+                getType(),
+                jarVolume);
     }
 
     @Override
@@ -48,14 +66,14 @@ public class InstantCoffeeJars extends InstantCoffee {
     @Override
     public String toString() {
         return "InstantCoffeeJars{" +
-                "jarVolume=" + jarVolume +
-                ", name='" + name + '\'' +
-                ", country='" + country + '\'' +
-                ", roasting=" + roasting +
-                ", weight=" + weight +
-                ", arabicaPercent=" + arabicaPercent +
-                ", productionDate=" + productionDate +
-                ", pricePerKilo=" + pricePerKilo +
-                '}';
+                "\n jarVolume=" + jarVolume +
+                ",\n name='" + name + '\'' +
+                ",\n country='" + country + '\'' +
+                ",\n roasting=" + roasting +
+                ",\n weight=" + weight +
+                ",\n arabicaPercent=" + arabicaPercent +
+                ",\n productionDate=" + productionDate +
+                ",\n pricePerKilo=" + pricePerKilo +
+                "}\n";
     }
 }

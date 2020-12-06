@@ -1,8 +1,10 @@
 package model.coffee;
 
+import model.CoffeeException;
 import model.coffee_enums.InstantCoffeeType;
 import model.coffee_enums.Roasting;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
@@ -15,7 +17,7 @@ import java.util.Objects;
  */
 
 
-public class InstantCoffeeSticks extends InstantCoffee {
+public class InstantCoffeeSticks extends InstantCoffee implements Serializable {
     private final int sticksNumber;
 
     public InstantCoffeeSticks(String name, Roasting roasting,
@@ -25,6 +27,22 @@ public class InstantCoffeeSticks extends InstantCoffee {
                                int sticksNumber) {
         super(name, roasting, weight, arabicaPercent, country, productionDate, pricePerKilo, type);
         this.sticksNumber = sticksNumber;
+    }
+
+    @Override
+    public Coffee sell(double weight) throws CoffeeException {
+        if (weight > this.weight)
+            throw new CoffeeException("Not enough coffee to sell!");
+        this.weight -= weight;
+        return new InstantCoffeeJars(name,
+                roasting,
+                weight,
+                arabicaPercent,
+                country,
+                productionDate,
+                pricePerKilo,
+                getType(),
+                sticksNumber);
     }
 
     @Override
@@ -39,15 +57,15 @@ public class InstantCoffeeSticks extends InstantCoffee {
     @Override
     public String toString() {
         return "InstantCoffeeSticks{" +
-                "sticksNumber=" + sticksNumber +
-                ", name='" + name + '\'' +
-                ", country='" + country + '\'' +
-                ", roasting=" + roasting +
-                ", weight=" + weight +
-                ", arabicaPercent=" + arabicaPercent +
-                ", productionDate=" + productionDate +
-                ", pricePerKilo=" + pricePerKilo +
-                '}';
+                "\n sticksNumber=" + sticksNumber +
+                ",\n name='" + name + '\'' +
+                ",\n country='" + country + '\'' +
+                ",\n roasting=" + roasting +
+                ",\n weight=" + weight +
+                ",\n arabicaPercent=" + arabicaPercent +
+                ",\n productionDate=" + productionDate +
+                ",\n pricePerKilo=" + pricePerKilo +
+                "}\n";
     }
 
     @Override
