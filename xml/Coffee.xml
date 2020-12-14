@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CoffeeWarehouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns="http://www.bsu.by"
+                 xsi:schemaLocation="http://www.bsu.by CoffeeSchema.xsd">
+    <coffeeBeans>
+        <name>Lavazza</name>
+        <country>Brazil</country>
+        <roasting>MEDIUM</roasting>
+        <weight>3.5</weight>
+        <arabicaPercent>100</arabicaPercent>
+        <productionDate>2019-10-26</productionDate>
+        <pricePerKilo>67.99</pricePerKilo>
+        <processing>DRIED</processing>
+    </coffeeBeans>
+
+    <groundCoffee>
+        <name>Dallmayr</name>
+        <country>Russia</country>
+        <roasting>UNROASTED</roasting>
+        <weight>56.3</weight>
+        <arabicaPercent>90</arabicaPercent>
+        <productionDate>2020-08-19</productionDate>
+        <pricePerKilo>12.6</pricePerKilo>
+        <grinding>MEDIUM_GRIND</grinding>
+    </groundCoffee>
+
+    <instantCoffeeJars>
+        <name>Gutt</name>
+        <country>Columbia</country>
+        <roasting>UNROASTED</roasting>
+        <weight>10.4</weight>
+        <arabicaPercent>33</arabicaPercent>
+        <productionDate>2020-05-15</productionDate>
+        <pricePerKilo>5.6</pricePerKilo>
+        <type>FREEZE_DRIED</type>
+        <jarVolume>450</jarVolume>
+    </instantCoffeeJars>
+
+    <instantCoffeeSticks>
+        <name>Barista MIO</name>
+        <country>Poland</country>
+        <roasting>MEDIUM</roasting>
+        <weight>5.2</weight>
+        <arabicaPercent>55</arabicaPercent>
+        <productionDate>2019-06-24</productionDate>
+        <pricePerKilo>25</pricePerKilo>
+        <type>GRANULATED</type>
+        <sticksNumber>10</sticksNumber>
+    </instantCoffeeSticks>
+
+</CoffeeWarehouse>

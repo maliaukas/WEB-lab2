@@ -1,7 +1,7 @@
 package model.builder;
 
-import model.coffee.Coffee;
 import model.CoffeeException;
+import model.coffee.Coffee;
 import model.coffee_enums.Roasting;
 
 import java.math.BigDecimal;
@@ -28,9 +28,9 @@ public abstract class CoffeeBuilder {
         this.name = name;
     }
 
-    public abstract Coffee Build() throws CoffeeException;
+    public abstract Coffee build() throws CoffeeException;
 
-    protected void Check() throws CoffeeException {
+    protected void check() throws CoffeeException {
         if (pricePerKilo.compareTo(BigDecimal.ZERO) <= 0) {
             throw new CoffeeException("Price must be positive!");
         }
@@ -50,6 +50,10 @@ public abstract class CoffeeBuilder {
 
     public void setPricePerKilo(double pricePerKilo) {
         this.pricePerKilo = new BigDecimal(Double.toString(pricePerKilo));
+    }
+
+    public void setPricePerKilo(BigDecimal pricePerKilo) {
+        this.pricePerKilo = pricePerKilo;
     }
 
     public void setRoasting(Roasting roasting) {

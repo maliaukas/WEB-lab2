@@ -24,8 +24,8 @@ public class InstantCoffeeJarsBuilder extends CoffeeBuilder {
     }
 
     @Override
-    public Coffee Build() throws CoffeeException {
-        Check();
+    public Coffee build() throws CoffeeException {
+        check();
         return new InstantCoffeeJars(name, roasting,
                 weight, arabicaPercent,
                 country, productionDate,
@@ -33,8 +33,8 @@ public class InstantCoffeeJarsBuilder extends CoffeeBuilder {
     }
 
     @Override
-    protected void Check() throws CoffeeException {
-        super.Check();
+    protected void check() throws CoffeeException {
+        super.check();
         if (jarVolume <= 0) {
             throw new CoffeeException("Jar volume must be positive!");
         }

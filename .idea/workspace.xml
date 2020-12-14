@@ -2,28 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="355970f7-514a-4a1c-8c4f-870f6c24cd3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ICoffeeControllerRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CoffeeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ICoffeeShopRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/OrderMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/RMIClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/RMIServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/xml/DOMParserCoffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/xml/SAXParserCoffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/xml/StAXParserCoffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/XMLValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/Coffee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/CoffeeSchema.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ALX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ALX.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CoffeeFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/controller/CoffeeFinder.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/controller/CoffeeFinder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/controller/OrderController.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/controller/OrderController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/controller/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/controller/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-21.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/CoffeeException.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/CoffeeException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/CoffeeShop.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/CoffeeShop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/CoffeeWarehouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/CoffeeWarehouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/CoffeeBeansBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/CoffeeBeansBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/CoffeeBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/CoffeeBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/GroundCoffeeBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/GroundCoffeeBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/InstantCoffeeJarsBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/InstantCoffeeJarsBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/InstantCoffeeSticksBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/InstantCoffeeSticksBuilder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/builder/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/builder/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/Coffee.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/Coffee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/CoffeeBeans.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/CoffeeBeans.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/GroundCoffee.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/GroundCoffee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/InstantCoffee.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/InstantCoffee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/InstantCoffeeJars.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/InstantCoffeeJars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/InstantCoffeeSticks.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/InstantCoffeeSticks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee_enums/CoffeeBeansProcessing.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee_enums/CoffeeBeansProcessing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee_enums/GroundCoffeeGrinding.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee_enums/GroundCoffeeGrinding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee_enums/InstantCoffeeType.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee_enums/InstantCoffeeType.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee_enums/Roasting.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee_enums/Roasting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee_enums/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee_enums/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/coffee_enums/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/coffee_enums/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeArabicaComparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeArabicaComparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeCountryComparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeCountryComparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeDateComparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeDateComparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeNameComparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeNameComparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/CoffeePriceComparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/CoffeePriceComparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeWeightComparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/CoffeeWeightComparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/ComparatorFactory.CompareBy.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/ComparatorFactory.CompareBy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/ComparatorFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/ComparatorFactory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/comparators/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/comparators/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/model/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/serialized-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/view/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/view/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/view/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/view/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoffeeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CoffeeWarehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/Coffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/CoffeeBeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/GroundCoffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeJars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/coffee/InstantCoffeeSticks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBeansBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/CoffeeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/GroundCoffeeBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeJarsBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/builder/InstantCoffeeSticksBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +106,8 @@
         <option value="Enum" />
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,11 +115,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hdURlwkwlcF7r0rIozdPafHdlM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -70,7 +144,7 @@
       <recent name="D:\WEB\lab2\WEB-lab2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RMIClient">
+  <component name="RunManager" selected="Application.XMLValidation">
     <configuration name="RMIClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.RMIClient" />
       <module name="WEB-lab2" />
@@ -85,13 +159,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="XMLValidation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.XMLValidation" />
+      <module name="WEB-lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,9 +188,11 @@
     <list>
       <item itemvalue="Application.RMIClient" />
       <item itemvalue="Application.RMIServer" />
+      <item itemvalue="Application.XMLValidation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.XMLValidation" />
         <item itemvalue="Application.RMIClient" />
         <item itemvalue="Application.RMIServer" />
       </list>
@@ -132,7 +223,13 @@
       <workItem from="1607201204853" duration="351000" />
       <workItem from="1607201861045" duration="4132000" />
       <workItem from="1607246787415" duration="10273000" />
-      <workItem from="1607276634491" duration="7862000" />
+      <workItem from="1607276634491" duration="8145000" />
+      <workItem from="1607332742536" duration="3275000" />
+      <workItem from="1607503889862" duration="113000" />
+      <workItem from="1607704375161" duration="6042000" />
+      <workItem from="1607756170239" duration="596000" />
+      <workItem from="1607867740971" duration="11190000" />
+      <workItem from="1607935073970" duration="5973000" />
     </task>
     <task id="LOCAL-00001" summary="Add second part: comparators, business-logic">
       <created>1601230946942</created>
@@ -162,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607202572769</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add RMI, logger">
+      <created>1607284714290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607284714290</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,11 +285,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add second part: comparators, business-logic" />
     <MESSAGE value="Add comments and javadoc" />
     <MESSAGE value="Add javadoc" />
     <MESSAGE value="Make some fields final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make some fields final" />
+    <MESSAGE value="Add RMI, logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add RMI, logger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

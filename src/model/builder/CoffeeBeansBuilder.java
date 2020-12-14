@@ -21,8 +21,8 @@ public class CoffeeBeansBuilder extends CoffeeBuilder {
     }
 
     @Override
-    public Coffee Build() throws CoffeeException {
-        super.Check();
+    public Coffee build() throws CoffeeException {
+        super.check();
         return new CoffeeBeans(name, roasting,
                 weight, arabicaPercent,
                 country, productionDate,

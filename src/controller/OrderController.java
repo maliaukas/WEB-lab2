@@ -81,9 +81,9 @@ public class OrderController implements ICoffeeControllerRemote {
         InstantCoffeeJars jarsCoffee;
 
         try {
-            coffeeBeans = (CoffeeBeans) beansBuilder.Build();
-            groundCoffee = (GroundCoffee) groundCoffeeBuilder.Build();
-            jarsCoffee = (InstantCoffeeJars) jarsBuilder.Build();
+            coffeeBeans = (CoffeeBeans) beansBuilder.build();
+            groundCoffee = (GroundCoffee) groundCoffeeBuilder.build();
+            jarsCoffee = (InstantCoffeeJars) jarsBuilder.build();
         } catch (CoffeeException ex) {
             logger.error("Error while building coffee!");
             return null;

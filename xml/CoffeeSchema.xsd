@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.bsu.by"
+           xmlns="http://www.bsu.by"
+           elementFormDefault="qualified">
+
+    <!--    Обработка кофе в зернах-->
+    <xs:simpleType name="CoffeeBeansProcessing" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DRIED"/>
+            <xs:enumeration value="SEMIDRIED"/>
+            <xs:enumeration value="WASHED"/>
+            <xs:enumeration value="WET_HULL"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--    Помол молотого кофе-->
+    <xs:simpleType name="GroundCoffeeGrinding" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PULVERIZED"/>
+            <xs:enumeration value="FINE_GRIND"/>
+            <xs:enumeration value="MEDIUM_GRIND"/>
+            <xs:enumeration value="COURSE_GRIND"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--    Обжарка кофе-->
+    <xs:simpleType name="Roasting" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UNROASTED"/>
+            <xs:enumeration value="LIGHT"/>
+            <xs:enumeration value="MEDIUM"/>
+            <xs:enumeration value="DARK"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--    Вид растворимого кофе-->
+    <xs:simpleType name="InstantCoffeeType" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FREEZE_DRIED"/>
+            <xs:enumeration value="SPRAY_DRIED"/>
+            <xs:enumeration value="GRANULATED"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Price">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PositiveDouble">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Percent">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Coffee" abstract="true">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+            <xs:element name="roasting" type="Roasting"/>
+            <xs:element name="weight" type="PositiveDouble"/>
+            <xs:element name="arabicaPercent" type="Percent"/>
+            <xs:element name="productionDate" type="xs:date"/>
+            <xs:element name="pricePerKilo" type="Price"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="InstantCoffee" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="Coffee">
+                <xs:sequence>
+                    <xs:element name="type" type="InstantCoffeeType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="CoffeeBeans">
+        <xs:complexContent>
+            <xs:extension base="Coffee">
+                <xs:sequence>
+                    <xs:element name="processing" type="CoffeeBeansProcessing"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="GroundCoffee">
+        <xs:complexContent>
+            <xs:extension base="Coffee">
+                <xs:sequence>
+                    <xs:element name="grinding" type="GroundCoffeeGrinding"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="InstantCoffeeJars">
+        <xs:complexContent>
+            <xs:extension base="InstantCoffee">
+                <xs:sequence>
+                    <xs:element name="jarVolume" type="PositiveDouble"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="InstantCoffeeSticks">
+        <xs:complexContent>
+            <xs:extension base="InstantCoffee">
+                <xs:sequence>
+                    <xs:element name="sticksNumber" type="xs:positiveInteger"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="CoffeeWarehouse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name="coffeeBeans" type="CoffeeBeans"/>
+                    <xs:element name="groundCoffee" type="GroundCoffee"/>
+                    <xs:element name="instantCoffeeJars" type="InstantCoffeeJars"/>
+                    <xs:element name="instantCoffeeSticks" type="InstantCoffeeSticks"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
